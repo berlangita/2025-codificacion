@@ -1,4 +1,8 @@
-if __name__ == "__main__":
-    print(chr(98))
-    print("=======")
-    print(ord('c'))
+asci = 31
+while asci < 255:
+    char = chr(asci)
+    print(f"{asci} : {char}".ljust(10), end="")
+    if (asci - 31) % 5 == 0:
+        print()
+    asci += 1
+print("tabla asci")
